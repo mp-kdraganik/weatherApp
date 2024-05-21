@@ -1,0 +1,20 @@
+.container{
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    width: 300px;
+}
+.cityName{
+    font-size: 20px;
+    font-weight: bold;
+}
+.countryName{
+    margin-left: 8px;
+    font-size: 10px;
+}
+.lan{
+    font-size: 18px;
+}
+.lat{
+    margin-left: 8px;
+    font-size: 18px;
+}
