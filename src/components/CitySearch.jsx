@@ -2,7 +2,13 @@ import style from "@/styles/components/CitySearch.module.css";
 import { useEffect, useState } from "react";
 import CityBox from "@/components/CityBox";
 
-export default function CitySearch() {
+export default function CitySearch({setLat, setLon, setCity}) {
+
+    const setData = (lat, lon, city) => {
+        setLat(lat);
+        setLon(lon);
+        setCity(city);
+    }
 
     const [text, setText] = useState("");
     const [cities, setCities] = useState([]);
@@ -29,7 +35,7 @@ export default function CitySearch() {
             <input className={style.textInput} type="text" placeholder="Enter city name" value={text} onChange={e => setText(e.target.value)} />
             {
                 cities.map((city) => {
-                    return <CityBox city={city.city} country={city.country} lon={city.lon} lat={city.lat}/>
+                    return <CityBox city={city.city} country={city.country} lon={city.lon} lat={city.lat} setData={setData}/>
                 })
             }
         </>

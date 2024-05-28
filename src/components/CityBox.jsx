@@ -1,10 +1,10 @@
 import style from "@/styles/components/CityBox.module.css";
 import { useEffect, useState } from "react";
 
-export default function CitySearch({city, country, lat, lon}) {
+export default function CityBox({city, country, lat, lon, setData}) {
 
     return (
-        <div className={style.container}>
+        <div className={style.container} onClick={()=>{setData(lat, lon, city)}}>
             {
             //Dodać wszytskie informacje o znaloźonych miastach
             }
