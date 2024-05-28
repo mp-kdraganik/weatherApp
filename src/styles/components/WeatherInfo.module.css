@@ -1,0 +1,15 @@
+.infoSection{
+    margin-bottom: 1rem;
+}
+
+.infoSection .sectionTitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.infoSection .data{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
